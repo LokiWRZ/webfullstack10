@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cardCase {
+            margin-bottom: 20px;
+            display: flex;
+            background-color: rgb(240, 234, 234);
+            flex-wrap: wrap;
+            overflow: hidden;
+            justify-content: space-between;
+        }
+        .paella{
+            width: 400px;
+        }
+        .card{
+            width: 400px;
+            margin: 10px auto;
+            background-color: white;
+            box-shadow: 0px 5px 20px #999;
+        }
+        .card-header>.card-img-button{
+            position: absolute;
+            margin-left: 150px;
+            margin-top: -20px;
+        }
+        .footer-img-point3:hover,.footer-img-heart:hover,.footer-img-downArrow:hover,.lablePic:hover{
+            width: 30px;
+            height: 30px;
+        }
+        .card-mainImage{
+            height: 230px;
+            width: 400px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 10px;
+        }
+        .card-mainImage img{
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .footer-img-point3,.footer-img-heart,.footer-img-downArrow{
+            width: 25px;
+            height: 25px;
+        }
+        .card-img-button>img{
+            filter:grayscale(1);    
+        }
+        .footer-img-heart{
+            margin-left: 10px;
+        }
+        .footer-img-point3{
+            margin-left: 15px;
+        }
+        .footer-img-downArrow{
+            margin-left: 275px;
+        }
+        .cardHeader-nameImg{
+            width: 60px;
+            height: 60px;
+            float: left;
+            margin-left: 10px;
+            margin-top: -10px;
+        }
+        .cardHeader-img{
+            width: 40px;
+            height: 40px;
+        }
+        .card-header>h2{
+            font-size: 20px;
+            margin-bottom: 5px;
+            margin-left: 80px;
+        }
+        .com_time{
+            margin-top: 10px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+        .card-body,.div__cardHeader-comment{
+            text-align: left;
+            padding: 15px 20px;
+            font-family:sans-serif;
+            font-weight: 100;
+            font-size: 18px;
+            color: #777;
+            margin-top: -15px;
+        }
+        .card-img-button{
+            width: 40px;
+            background-color:transparent;
+            height: 40px;
+            overflow: visible;
+            border-radius: 50%;
+            border: none;
+            margin-left: -5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="cardCase">
+        <div class="card">
+            <div class="card-header">
+                <img class="cardHeader-nameImg" src="./photo.gif" alt="name">
+                <h2>Shrimp and Chorizo</h2>
+                <time class="com_time">September 14,2016</time>
+                <button class="card-img-button" >
+                    <img class="cardHeader-img" src="./infoPoint.png" alt="">
+                </button>
+            </div>
+            <div class="card-mainImage">
+                <img src="./paella.jpg" alt="food">
+            </div>
+            <div class="card-body">
+                <p class="comment">This impressive paella is a perfect party dish and a fun meal to cook together with your guest. Add 1 cup of frozen peas along with the mussels, if you like.</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-img-button" >
+                    <img class="footer-img-heart" src="./grey_heart.png" alt="">
+                </button>
+                <button class="card-img-button" >
+                    <img class="footer-img-point3" src="./line3point.png" alt="">
+                </button>
+                <button class="card-img-button" >    
+                    <img class="footer-img-downArrow" src="./down-black-arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img class="cardHeader-nameImg" src="./photo.gif" alt="name">
+                <h2>Teenager Ragdoll</h2>
+                <time class="com_time">September 14,2017</time>
+                <button class="card-img-button" >
+                    <img class="cardHeader-img" src="./infoPoint.png" alt="">
+                </button>
+            </div>
+            <div class="card-mainImage">
+                <img src="./cat1.jpg" alt="food">
+            </div>
+            <div class="card-body">
+                <p class="comment">Lorem ipsum ullam, porro vitae? Expedita error amet ipsa adipisci, dignissimos voluptatum tenetur enim dolorem debitis, natus consequatur laudantium.</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-img-button" >
+                    <img class="footer-img-heart" src="./grey_heart.png" alt="">
+                </button>
+                <button class="card-img-button" >
+                    <img class="footer-img-point3" src="./line3point.png" alt="">
+                </button>
+                <button class="card-img-button" >    
+                    <img class="footer-img-downArrow" src="./down-black-arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img class="cardHeader-nameImg" src="./photo.gif" alt="name">
+                <h2>Neutered Ragdoll</h2>
+                <time class="com_time">September 14,2018</time>
+                <button class="card-img-button" >
+                    <img class="cardHeader-img" src="./infoPoint.png" alt="">
+                </button>
+            </div>
+            <div class="card-mainImage">
+                <img src="./cat2.jpg" alt="food">
+            </div>
+            <div class="card-body">
+                <p class="comment">Lorem ipsum ullam, porro vitae? Expedita error amet ipsa adipisci, dignissimos voluptatum tenetur enim dolorem debitis, natus consequatur laudantium.</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-img-button" >
+                    <img class="footer-img-heart" src="./grey_heart.png" alt="">
+                </button>
+                <button class="card-img-button" >
+                    <img class="footer-img-point3" src="./line3point.png" alt="">
+                </button>
+                <button class="card-img-button" >    
+                    <img class="footer-img-downArrow" src="./down-black-arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <img class="cardHeader-nameImg" src="./photo.gif" alt="name">
+                <h2>Caged Ragdoll</h2>
+                <time class="com_time">May 14,2019</time>
+                <button class="card-img-button" >
+                    <img class="cardHeader-img" src="./infoPoint.png" alt="">
+                </button>
+            </div>
+            <div class="card-mainImage">
+                <img src="./cat3.jpg" alt="food">
+            </div>
+            <div class="card-body">
+                <p class="comment">Lorem ipsum ullam, porro vitae? Expedita error amet ipsa adipisci, dignissimos voluptatum tenetur enim dolorem debitis, natus consequatur laudantium.</p>
+            </div>
+            <div class="card-footer">
+                <button class="card-img-button" >
+                    <img class="footer-img-heart" src="./grey_heart.png" alt="">
+                </button>
+                <button class="card-img-button" >
+                    <img class="footer-img-point3" src="./line3point.png" alt="">
+                </button>
+                <button class="card-img-button" >    
+                    <img class="footer-img-downArrow" src="./down-black-arrow.png" alt="">
+                </button>
+            </div>
+        </div>
+
+
+        
+    </div>
+</body>
+</html>
