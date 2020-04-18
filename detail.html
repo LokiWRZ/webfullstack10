@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- 整体大的感觉还不错，一些细节需要再细致一些，因为一般大公司讲究的是pixel perfect
+    这些img的icon可以用font-awesome的icon来代替，参考一下https://www.w3schools.com/icons/fontawesome_icons_intro.asp，
+    用图片抠图大小不好确定，居中之类的都有问题，而且图片背景不透明，这些font-awesome都可以解决
+    字体可以用Google的fonts，会更好看一些，可以参考一下这个作业的引用https://github.com/56tiagra/css-flex-prac
+    card header这一行可以试着做一下整体居中，用flex box比较容易实现，用block的话需要有一些技巧，可以学习一下这篇文章里的内容 https://css-tricks.com/centering-css-complete-guide/ 
+    class命名可以用BEM的方法，比如card， card__header, card__header__left-icon, card__header__title, card__header__right-icon这样
+    把这些细节做好质量就上来了
+    做好之后可以用sass把css再写一遍练习一下，方便BEM，代码也会更简洁
+    -->
+
     <style>
         .cardCase {
             margin-bottom: 20px;
@@ -27,6 +37,7 @@
             margin-left: 150px;
             margin-top: -20px;
         }
+        /* 这些公用的比较多的可以单独加一个class，就叫img-icon */
         .footer-img-point3:hover,.footer-img-heart:hover,.footer-img-downArrow:hover,.lablePic:hover{
             width: 30px;
             height: 30px;
@@ -82,6 +93,7 @@
             font-size: 16px;
             margin-left: 10px;
         }
+        /* 下面的这个div__cardHeader-comment 可以删掉，没有用，而且起名不要前面带tag名字 */
         .card-body,.div__cardHeader-comment{
             text-align: left;
             padding: 15px 20px;
@@ -103,6 +115,7 @@
     </style>
 </head>
 <body>
+    <!-- 这个名字可以改成card-conatainer可读性更强一些 -->
     <div class="cardCase">
         <div class="card">
             <div class="card-header">
